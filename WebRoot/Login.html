@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Shortcut Icon" type="image/x-icon" href="pics/title.ico" />
+    <link rel="stylesheet" type="text/css" href="style/nb.css" />
+    <meta http-equiv="content-type" content="text/html; charset=gb2312">
+    <title>登录</title>
+	
+  </head>
+
+  <body>
+    <div>
+	  <h1>报刊订阅管理系统——登录</h1><br />
+        <form name="myform_1" method="post" onsubmit="return checkinput(this);" action="CheckLogin.jsp">
+          <table>
+            <tr>
+              <td>用户账号：</td>
+              <td><input type="text" name="id" /></td>
+            </tr>
+            <tr>
+              <td>用户密码：</td>
+              <td><input type="password" name="pass" /></td>
+            </tr>
+            <tr>
+              <td>用户身份：</td>
+              <td>
+                <input type="radio" name="identity" value="student" checked="checked" /> 用户
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="identity" value="admin" /> 管理员
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+	          <td>
+	            <input type="submit" name="submit" value="登录" />
+	            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	            <input type="reset" name="reset" value="重置" />
+	          </td>
+	      </table>
+	    </form>
+		<br/>
+	    <table>
+          <tr>
+	        <td><a href="Index.html"><img class="small" src="pics/index.ico" alt="主页" />主页</a></td>
+	      </tr>
+	      <tr>
+	        <td><a href="Register.html"><img class="small" src="pics/register.ico" alt="注册" />注册</a></td>
+	      </tr>
+        </table>
+	 </div>  
+	   
+	 <script type="text/javascript"> 
+	  function checkinput(myform_1)
+      {
+         if(myform_1.id.value=="")
+         {
+           alert("请输入用户账号!");
+           return false;
+         }
+         if(myform_1.pass.value=="")
+         {
+           alert("请输入密码!");
+           return false;
+         }
+      }
+     </script>
+  </body>
+</html>

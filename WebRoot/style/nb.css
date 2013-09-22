@@ -1,0 +1,65 @@
+body{
+	background-image:url('../pics/wallpaper.jpg');
+	background-repeat: no-repeat; 
+	background-attachment:fixed;
+    background-position:center top;
+    overflow-x :auto;
+    overflow-y :scroll;
+}
+h3{
+	color:#ff6699;
+}
+div{
+    margin-top:80px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+    color:#00ff00;
+}
+img.small{
+    height:60px;
+}
+a:link{
+    font-size:30px;
+	text-decoration:none;
+	color:#ffff00;
+}
+a:visited{
+    font-size:30px;
+	text-decoration:none;
+	color:#ffff00;
+}
+a:hover{
+    font-size:30px;
+	text-decoration:none;
+	color:#00ff00;
+}
+table{
+	color: #00ff00;
+	text-align:center;
+	margin:0px auto; 
+	padding:20px 20px;
+	border-spacing: 10px;
+}
+.right-top{
+	margin-top:10px;
+	font-size:15px;
+    color:#ffcc00;
+    position:fixed;
+    right:10px;
+    top:5px;
+}
+th{
+	color: #ffff00;
+	font-size:20px;
+}
+.spe{
+	border:2px #0066ff solid; 
+	padding:5px 10px 3px 6px;
+	border-collapse:collapse;
+	border-spacing: 0px;
+}
+.spe2{
+	font-size:10px;
+	color:#ffcc33;
+	text-align:left;
+}
